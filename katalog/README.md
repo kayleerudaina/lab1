@@ -14,6 +14,7 @@ Sebuah aplikasi tentunya bisa dibuat tanpa Virtual Environment. Namun, seperti y
 
 
 3. Membuat sebuah routing untuk memetakan fungsi yang telah kamu buat pada views.py.
+
 Routing dilakukan dengan menambahkan path('katalog/', include('katalog.urls')) pada urls.py di project_django. Routing dilakukan ke urls.py pada katalog. Kemudian urls.py ini akan menjalankan fungsi view show_katalog yang berada di views.py.
 4. Memetakan data yang didapatkan ke dalam HTML dengan sintaks dari Django
 5. Melakukan deployment
