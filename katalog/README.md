@@ -11,10 +11,14 @@ Sebuah aplikasi tentunya bisa dibuat tanpa Virtual Environment. Namun, seperti y
 
 ## Cara implementasi
 1. Membuat fungsi pada views.py yang dapat melakukan pengambilan data dari model dan dikembalikan ke dalam sebuah HTML.
+Membuat fungsi katalog_view dengan parameter _request_ dari user. Fungsi tersebut akan memanggil query ke dalam database dan menyimpan hasil dalam variabel catalogitem kemudian katalog.html akan dirender agar dapat muncul dalam HTML.
 
-
-3. Membuat sebuah routing untuk memetakan fungsi yang telah kamu buat pada views.py.
+2. Membuat sebuah routing untuk memetakan fungsi yang telah kamu buat pada views.py.
 
 Routing dilakukan dengan menambahkan path('katalog/', include('katalog.urls')) pada urls.py di project_django. Routing dilakukan ke urls.py pada katalog. Kemudian urls.py ini akan menjalankan fungsi view show_katalog yang berada di views.py.
-4. Memetakan data yang didapatkan ke dalam HTML dengan sintaks dari Django
-5. Melakukan deployment
+
+3. Memetakan data yang didapatkan ke dalam HTML dengan sintaks dari Django
+Pemetaan dari proses render dengan fungsi pada views.py pada katalog.html. Akan dilakukan pemetaan dari data yang ada.
+
+4. Melakukan deployment
+Untuk melakukan deployment, hubungkan repository pada github dengan heroku. Tambahkan variable APP_NAME dan API_KEY dari aplikasi yang kita buat di Heroku ke dalam Github repository secrets.

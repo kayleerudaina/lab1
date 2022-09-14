@@ -3,10 +3,10 @@ from katalog.models import CatalogItem
 
 # TODO: Create views.
 def katalog_view (request):
-    katalog_item = CatalogItem.objects.all()
+    catalogitem = CatalogItem.objects.all()
     context = {
-    'list_item': katalog_item,
-    'Nama': 'Kaylee Rudaina Danisha',
-    'ID': '2106654971'
+    'list_item': catalogitem,
+    'nama': 'Kaylee Rudaina Danisha',
+    'id': '2106654971'
     }
     return render(request, "katalog.html", context)
