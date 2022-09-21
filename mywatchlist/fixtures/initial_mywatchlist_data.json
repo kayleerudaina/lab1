@@ -1,0 +1,112 @@
+[
+    {
+        "model": "mywatchlist.watchlistitem",
+        "pk": 1,
+        "fields": {
+            "watched": true,
+            "title": "Star Wars: Episode IV",
+            "rating": 5,
+            "release_date": "1977-05-27",
+            "review": "Fun movie"
+        }
+    },
+    {
+        "model": "mywatchlist.watchlistitem",
+        "pk": 2,
+        "fields": {
+            "watched": false,
+            "title": "Star Wars: Episode V",
+            "rating": 4,
+            "release_date": "1980-05-21",
+            "review": "Less fun than previous movie."
+        }
+    },
+    {
+        "model": "mywatchlist.watchlistitem",
+        "pk": 3,
+        "fields": {
+            "watched": false,
+            "title": "Star Wars: Episode VI",
+            "rating": 4,
+            "release_date": "1983-05-25",
+            "review": "Not as strong as others."
+        }
+    },
+    {
+        "model": "mywatchlist.watchlistitem",
+        "pk": 4,
+        "fields": {
+            "watched": true,
+            "title": "Star Wars: Episode I",
+            "rating": 2,
+            "release_date": "1999-05-19",
+            "review": "Good start for prequel."
+        }
+    },
+    {
+        "model": "mywatchlist.watchlistitem",
+        "pk": 5,
+        "fields": {
+            "watched": false,
+            "title": "Star Wars: Episode II",
+            "rating": 3,
+            "release_date": "2002-05-16",
+            "review": "Great film overall"
+        }
+    },
+    {
+        "model": "mywatchlist.watchlistitem",
+        "pk": 6,
+        "fields": {
+            "watched": false,
+            "title": "Star Wars: Episode III",
+            "rating": 4,
+            "release_date": "2005-05-19",
+            "review": "Dark and awesome movie."
+        }
+    },
+    {
+        "model": "mywatchlist.watchlistitem",
+        "pk": 7,
+        "fields": {
+            "watched": true,
+            "title": "Star Wars: Episode VII",
+            "rating": 4,
+            "release_date": "2015-12-18",
+            "review": "Star Wars couldn't get any better."
+        }
+    },
+    {
+        "model": "mywatchlist.watchlistitem",
+        "pk": 8,
+        "fields": {
+            "watched": true,
+            "title": "Star Wars: Episode VIII",
+            "rating": 2,
+            "release_date": "2017-12-15",
+            "review": "A mess of plotholes"
+        }
+    },
+    {
+        "model": "mywatchlist.watchlistitem",
+        "pk": 9,
+        "fields": {
+            "watched": true,
+            "title": "Star Wars: Episode IX",
+            "rating": 1,
+            "release_date": "2019-12-20",
+            "review": "Terrible movie"
+        }
+    },
+    {
+        "model": "mywatchlist.watchlistitem",
+        "pk": 10,
+        "fields": {
+            "watched": true,
+            "title": "Rogue One",
+            "rating": 5,
+            "release_date": "2016-12-16",
+            "review": "Best modernized Star Wars movie."
+        }
+    }
+]
