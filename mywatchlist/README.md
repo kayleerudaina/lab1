@@ -18,3 +18,11 @@ Data delivery diperlukan untuk melakukan pertukaran data antarserver. Data terda
 3. Membuat model baru MyWatchlist beserta atributnya
 4. Memetakan data XML dan JSON dengan menambahkan `path('xml/', show_xml, name='show_xml'), path('json/', show_json, name='show_json'),` pada urls.py dalam mywatchlist untuk bisa menunjukkan data dalam bentuk XML dan JSON.
 4. Melakukan deployment dengan menghubungkan repository pada github dengan Heroku. 
+
+## Akses mengunakan Postman
+### JSON
+![Postman JSON](https://github.com/kayleerudaina/files/blob/main/JSON.jpg?raw=truee)
+### XML
+![Postman XML](https://github.com/kayleerudaina/files/blob/main/XML.jpg?raw=true)
+### HTML
+![Postman HTML](https://github.com/kayleerudaina/files/blob/main/HTML.jpg?raw=true)
