@@ -3,7 +3,7 @@
 {% block content %}
 <style>
     table, th, td {
-    border: 1px solid black;
+    border: 1px solid rgb(75, 75, 75);
     border-collapse: collapse;
     }
     th, td {
@@ -33,6 +33,5 @@
 <button><a href="{% url 'todolist:create_task' %}">Tambah Task Baru</a></button>
 <button><a href="{% url 'todolist:logout' %}">Logout</a></button>
 <br>
-<h5>Sesi terakhir login: {{ last_login }}</h5>
 
 {% endblock content %}
