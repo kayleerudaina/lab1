@@ -16,8 +16,9 @@ Data delivery diperlukan untuk melakukan pertukaran data antarserver. Data terda
 1. Membuat aplikasi baru, yaitu mywatchlist dan menambahkan pada settings.py dalam project_django
 2. Menambahkan path baru untuk aplikasi mywatchlist dengan menambahkan `path('mywatchlist/', include('mywatchlist.urls'))` pada urls.py di project_django
 3. Membuat model baru MyWatchlist beserta atributnya
-4. Memetakan data XML dan JSON dengan menambahkan `path('xml/', show_xml, name='show_xml'), path('json/', show_json, name='show_json'),` pada urls.py dalam mywatchlist untuk bisa menunjukkan data dalam bentuk XML dan JSON.
-4. Melakukan deployment dengan menghubungkan repository pada github dengan Heroku. 
+4. Membuat fungsi pada views.py untuk mengembalikan data dalam bentuk XML, JSON dan HTML.
+5. Memetakan data XML dan JSON dengan menambahkan `path('xml/', show_xml, name='show_xml'), path('json/', show_json, name='show_json'),` pada urls.py dalam mywatchlist untuk bisa menunjukkan data dalam bentuk XML dan JSON.
+6. Melakukan deployment dengan menghubungkan repository pada github dengan Heroku. 
 
 ## Akses mengunakan Postman
 ### JSON
