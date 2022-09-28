@@ -1,0 +1,38 @@
+{% extends 'base.html' %}
+
+{% block content %}
+<style>
+    table, th, td {
+    border: 1px solid black;
+    border-collapse: collapse;
+    }
+    th, td {
+    padding: 10px;
+    }
+  </style>
+<h3>Nama: </h3>
+<p>{{nama}}</p>
+<br>
+<h2>❗ Todo ❗</h2>
+<table>
+    <tr>
+    <th>Tanggal</th>
+    <th>Judul</th>
+    <th>Deskripsi</th>
+    </tr>
+    {% comment %} Tambahkan data di bawah baris ini {% endcomment %}
+    {% for todo in list_todo %}
+        <tr>
+            <td>{{todo.date}}</td>
+            <td>{{todo.title}}</td>
+            <td>{{todo.description}}</td>
+        </tr>
+    {% endfor %}
+</table>
+<br>
+<button><a href="{% url 'todolist:create_task' %}">Tambah Task Baru</a></button>
+<button><a href="{% url 'todolist:logout' %}">Logout</a></button>
+<br>
+<h5>Sesi terakhir login: {{ last_login }}</h5>
+
+{% endblock content %}
