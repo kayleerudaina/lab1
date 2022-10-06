@@ -5,11 +5,37 @@
 {% endblock meta %}
 
 {% block content %}
-
+<style>
+    .login {
+        display:flex;
+        justify-content: center;
+        position: absolute;
+        top: 50%;
+        left: 50%;
+        transform: translate(-50%, -50%);
+        font-family: Arial, Helvetica, sans-serif;
+    }
+    h1 {
+    text-align: center;
+    }
+    body {
+    background-color: rgb(241, 255, 231);
+    }
+    table.center{
+      margin-left:auto;
+      margin-right:auto;
+    }
+    table, th, td {
+    border: 2px solid rgb(0, 0, 0);
+    border-collapse: collapse;
+    }
+    th, td {
+    padding: 10px;
+    }
+</style>
+<body>
 <div class = "login">
-
-    <h1>Login</h1>
-
+    <h1 class=""display-2 mb-4">Login</h1>
     <form method="POST" action="">
         {% csrf_token %}
         <table>
@@ -41,5 +67,5 @@
     Belum mempunyai akun? <a href="{% url 'todolist:register' %}">Buat Akun</a>
 
 </div>
-
+</body>
 {% endblock content %}

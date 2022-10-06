@@ -62,3 +62,9 @@ def show_create_task(request):
         response = HttpResponseRedirect(reverse("todolist:show_todolist"))
         return response
     return render(request, "create.html")
+
+def change(request, pk):
+    data = TodoItem.objects.get(id=pk)
+    data.is_finished = not(data.is_finished)
+    data.save()
+    return redirect('todolist:show_todolist')
