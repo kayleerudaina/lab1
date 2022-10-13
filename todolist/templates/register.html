@@ -5,20 +5,24 @@
 {% endblock meta %}
 
 {% block content %}  
-
-<div class = "login">
-    
-    <h1>Formulir Registrasi</h1>  
-
+<style>
+    body {
+    background-color: rgb(195, 232, 255);
+    font-family: Arial, Helvetica, sans-serif;
+    }
+    th, td {
+    padding: 10px;
+    }
+</style>
+<body>
+<p class="h1 text-center py-5"><strong>Formulir Registrasi</strong></p>  
+<div class = "login d-flex justify-content-center">
         <form method="POST" >  
             {% csrf_token %}  
             <table>  
                 {{ form.as_table }}  
-                <tr>  
-                    <td></td>
-                    <td><input type="submit" name="submit" value="Daftar"/></td>  
-                </tr>  
             </table>  
+            <input class="btn login_btn btn-lg btn-primary col-12 my-3" type="submit" name="submit" value="Daftar"/>  
         </form>
 
     {% if messages %}  
@@ -30,5 +34,6 @@
     {% endif %}
 
 </div>  
+</body>
 
 {% endblock content %}

@@ -8,64 +8,62 @@
 <style>
     .login {
         display:flex;
-        justify-content: center;
         position: absolute;
         top: 50%;
         left: 50%;
         transform: translate(-50%, -50%);
-        font-family: Arial, Helvetica, sans-serif;
     }
     h1 {
     text-align: center;
     }
     body {
-    background-color: rgb(241, 255, 231);
+    background-color: rgb(195, 232, 255);
+    font-family: Arial, Helvetica, sans-serif;
     }
     table.center{
       margin-left:auto;
       margin-right:auto;
     }
     table, th, td {
-    border: 2px solid rgb(0, 0, 0);
     border-collapse: collapse;
     }
+
     th, td {
     padding: 10px;
     }
 </style>
 <body>
-<div class = "login">
-    <h1 class=""display-2 mb-4">Login</h1>
-    <form method="POST" action="">
-        {% csrf_token %}
-        <table>
-            <tr>
-                <td>Username: </td>
-                <td><input type="text" name="username" placeholder="Username" class="form-control"></td>
-            </tr>
-                    
-            <tr>
-                <td>Password: </td>
-                <td><input type="password" name="password" placeholder="Password" class="form-control"></td>
-            </tr>
+<div class = "login h-auto">
+    <div class="card text-white text-center bg-primary m-5 py-4" style="max-width: 20rem">
+        <div class="card-body py-2">
+            <h1 class="card-title">Login</h1>
+            <form method="POST" action="">
+                {% csrf_token %}
+                <table>
+                    <tr>
+                        <td>Username: </td>
+                        <td><input type="text" name="username" placeholder="Username" class="form-control"></td>
+                    </tr>
+                            
+                    <tr>
+                        <td>Password: </td>
+                        <td><input type="password" name="password" placeholder="Password" class="form-control"></td>
+                    </tr>
+                </table>
+                <input class="btn btn-light" type="submit" value="Login">
+            </form>
 
-            <tr>
-                <td></td>
-                <td><input class="btn login_btn" type="submit" value="Login"></td>
-            </tr>
-        </table>
-    </form>
-
-    {% if messages %}
-        <ul>
-            {% for message in messages %}
-                <li>{{ message }}</li>
-            {% endfor %}
-        </ul>
-    {% endif %}     
-        
-    Belum mempunyai akun? <a href="{% url 'todolist:register' %}">Buat Akun</a>
-
+            {% if messages %}
+                <ul>
+                    {% for message in messages %}
+                        <li>{{ message }}</li>
+                    {% endfor %}
+                </ul>
+            {% endif %}     
+            <br>
+            Belum mempunyai akun? <a href="{% url 'todolist:register' %}" class="btn btn-secondary">Buat Akun</a>
+        </div>   
+    </div>
 </div>
 </body>
 {% endblock content %}
